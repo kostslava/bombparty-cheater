@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "BombParty helper (JKLM)",
+  "version": "1.2.0",
+  "description": "Optional typing assistant for BombParty on jklm.fun room pages (e.g. jklm.fun/ABCD).",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["*://*.jklm.fun/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.jklm.fun/*"],
+      "js": ["page-bridge.js"],
+      "run_at": "document_idle",
+      "world": "MAIN",
+      "all_frames": true
+    },
+    {
+      "matches": ["*://*.jklm.fun/*"],
+      "js": ["words.js", "content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}

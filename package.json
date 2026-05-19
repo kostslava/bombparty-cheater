@@ -1,0 +1,7 @@
+{
+  "name": "bombparty-cheater",
+  "private": true,
+  "scripts": {
+    "build": "node --max-old-space-size=8192 tools/build-dictionary.mjs"
+  }
+}
