@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "BombParty helper (JKLM)",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Optional typing assistant for BombParty on jklm.fun room pages (e.g. jklm.fun/ABCD).",
   "icons": {
     "16": "icons/icon16.png",
